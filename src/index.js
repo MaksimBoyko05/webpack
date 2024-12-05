@@ -1,8 +1,14 @@
-import './style.css';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 
-console.log('Webpack проект успішно налаштовано!');
+function App() {
+    return (
+        <div>
+            <h1>React додаток з Webpack</h1>
+            <p>Налаштування пройшло успішно.</p>
+        </div>
+    );
+}
 
-document.addEventListener('DOMContentLoaded', () => {
-    const app = document.getElementById('app');
-    app.textContent = 'Вітаю в моєму Webpack проекті!';
-});
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
